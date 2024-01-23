@@ -1,0 +1,29 @@
+form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 40%;
+  margin: 40px auto;
+}
+
+label {
+  font-weight: bold;
+  margin: 5px;
+  display: inline-block;
+}
+
+input {
+  width: 100%;
+}
+
+#age {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: rgb(57, 3, 108);
+  color: white;
+  padding: 8px;
+  font-weight: bold;
+  border: none;
+}

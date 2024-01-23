@@ -8,12 +8,13 @@ function App() {
   const [allDetails, handleDetails] = useState([]);
   const formHandler = (userDetails) => {
     handleDetails((prevState) => [userDetails, ...prevState]);
-    console.log(allDetails);
   };
   return (
     <div>
       <RegisterUser formHandler={formHandler} />
-      <RegisteredUsers details={allDetails} />
+      {allDetails.length === 0 ? null : (
+        <RegisteredUsers details={allDetails} />
+      )}
     </div>
   );
 }
